@@ -49,7 +49,7 @@
     "exclude": [
       "lib"
     ],
-    "temp-directory": "./reports/.nyc_output",
+    "temp-dir": "./reports/.nyc_output",
     "report-dir": "./reports",
     "reporter": [
       "text-summary",
