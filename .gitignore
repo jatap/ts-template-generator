@@ -1,0 +1,32 @@
+# Node
+node_modules/
+
+# Reports
+reports/
+
+# Build folder
+lib/
+
+# IDE's
+.idea/
+nbproject
+.project
+.redcar
+*.sublime-*
+*.iml
+.vscode
+
+# Other
+.tmp
+.DS_Store
+.npm_install_log
+npm-debug.log
+.eslintrc*
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+.netrwhist
+*.un~
+*~
+
+# auto-generated tag files
+tags
