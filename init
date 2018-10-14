@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+TEMPLATE_PATH="$HOME/Templates/js/es6"
+PROJECT_PATH=$(pwd)
+PROJECT_NAME=`basename $(pwd)`
+
+units=(".babelrc.js" ".gitignore" ".tern-project" "package.json" "src" "test")
+
+# echo -e "Adding a new JS project based on ES6 defaults to ${PROJECT_PATH}...\n"
+echo -e "\e[1;37mAdding a new JS project based on ES6 defaults to ${PROJECT_PATH}...\n"
+
+alias cp="cp"
+
+for unit in "${units[@]}"
+do
+  echo -e "\e[0;33mCopying ${unit}..."
+  cp -Rf ${TEMPLATE_PATH}/${unit} ${PROJECT_PATH}
+done
+
+sed -i '' -e "s|XXX|${PROJECT_NAME}|g" "${PROJECT_PATH}/package.json"
+
+echo -e "\e[1;32m\nFiles has been successfully copied to ${PROJECT_PATH}\e[1;37m"
+
+alias cp="cp -i"
