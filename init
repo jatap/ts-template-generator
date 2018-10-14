@@ -4,21 +4,35 @@ TEMPLATE_PATH="$HOME/Templates/js/es6"
 PROJECT_PATH=$(pwd)
 PROJECT_NAME=`basename $(pwd)`
 
-units=(".babelrc.js" ".gitignore" ".tern-project" "package.json" "src" "test")
+units=(".babelrc.js" ".eslintrc" ".gitignore" ".tern-project" "package.json" "src" "test" "README.md")
 
-# echo -e "Adding a new JS project based on ES6 defaults to ${PROJECT_PATH}...\n"
-echo -e "\e[1;37mAdding a new JS project based on ES6 defaults to ${PROJECT_PATH}...\n"
+echo -e "\e[1;32m>> Adding a new JS project based on ES6 defaults to ${PROJECT_PATH}...\n"
 
 alias cp="cp"
 
 for unit in "${units[@]}"
 do
-  echo -e "\e[0;33mCopying ${unit}..."
+  echo -e "\e[0;37mCopying ${unit}..."
   cp -Rf ${TEMPLATE_PATH}/${unit} ${PROJECT_PATH}
 done
 
 sed -i '' -e "s|XXX|${PROJECT_NAME}|g" "${PROJECT_PATH}/package.json"
+sed -i '' -e "s|XXX|${PROJECT_NAME}|g" "${PROJECT_PATH}/README.md"
 
-echo -e "\e[1;32m\nFiles has been successfully copied to ${PROJECT_PATH}\e[1;37m"
+echo -e "\e[1;32m\n>> Files has been successfully copied to ${PROJECT_PATH}\n"
+
+npm install
+
+echo -e "\e[1;32m\n>> Packages have been installed\e[0;37m\n"
+
+git init
+git add .
+git commit -am 'chore(init): first sending'
+
+echo -e "\e[1;32m\n>> Git repo has been initialized\e[1;37m\n"
+
+ls -la
+
+echo -e "\e[1;32m\n>> Project has been sucessfully created\e[1;37m\n"
 
 alias cp="cp -i"
