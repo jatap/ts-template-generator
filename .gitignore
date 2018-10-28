@@ -1,6 +1,5 @@
 # Node
 node_modules/
-package-lock.json
 
 # Reports
 reports/
@@ -10,11 +9,9 @@ lib/
 
 # IDE's
 .idea/
-nbproject
-.project
-.redcar
-*.sublime-*
 *.iml
+.project
+*.sublime-*
 .vscode
 
 # Other
@@ -22,12 +19,7 @@ nbproject
 .DS_Store
 .npm_install_log
 npm-debug.log
-.eslintrc*
-[._]*.s[a-w][a-z]
-[._]s[a-w][a-z]
 .netrwhist
-*.un~
-*~
 .env
 
 # auto-generated tag files
