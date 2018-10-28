@@ -1,6 +1,6 @@
 import { expect } from "chai"
 
-import index from "../../src/index"
+import index from "../../../src/index"
 
 describe("index", () => {
   it("exists", () => {

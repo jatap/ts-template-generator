@@ -1,6 +1,6 @@
 import { expect } from "chai"
 
-import Greeter from "../../src/greeter"
+import Greeter from "../../../src/greeter"
 
 describe("Greeter", () => {
   const greeter = new Greeter()
