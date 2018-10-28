@@ -16,14 +16,17 @@ do
   cp -Rf ${TEMPLATE_PATH}/${unit} ${PROJECT_PATH}
 done
 
-rewrites=("package.json" "package-lock.json" "README.md")
+echo -e "\e[1;32m\n>> Files has been successfully copied to ${PROJECT_PATH}\n"
+
+rewrites=("package.json" "README.md")
+
 for rewrite in "${rewrites[@]}"
 do
-  echo -e "\e[0;37mRewriting ${unit}..."
-  sed -i '' -e "s|XXX|${PROJECT_NAME}|g" "${PROJECT_PATH}/${unit}"
+  echo -e "\e[0;37mRewriting ${rewrite}..."
+  sed -i '' -e "s|XXX|${PROJECT_NAME}|g" "${PROJECT_PATH}/${rewrite}"
 done
 
-echo -e "\e[1;32m\n>> Files has been successfully copied to ${PROJECT_PATH}\n"
+echo -e "\e[1;32m\n>> Files has been successfully rewrited in ${PROJECT_PATH}\n"
 
 npm install
 
