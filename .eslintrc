@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "standard",
+    "plugin:prettier/recommended",
+    "prettier",
+    "prettier/standard"
+  ],
+  "plugins": [
+    "chai-friendly",
+    "standard"
+  ],
+  "env": {
+    "es6": true,
+    "node": true,
+    "mocha": true,
+    "jasmine": true,
+    "cypress/globals": true
+  },
+  "rules": {
+    "no-unused-expressions": 0,
+    "chai-friendly/no-unused-expressions": 2
+  }
+}
