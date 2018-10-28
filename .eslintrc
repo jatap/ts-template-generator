@@ -13,8 +13,7 @@
     "es6": true,
     "node": true,
     "mocha": true,
-    "jasmine": true,
-    "cypress/globals": true
+    "jasmine": true
   },
   "rules": {
     "no-unused-expressions": 0,

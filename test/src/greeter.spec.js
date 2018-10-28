@@ -1,23 +1,23 @@
-import { expect } from "chai";
+import { expect } from "chai"
 
-import Greeter from "../../src/greeter";
+import Greeter from "../../src/greeter"
 
 describe("Greeter", () => {
-  const greeter = new Greeter();
+  const greeter = new Greeter()
 
   it("exists", () => {
-    expect(greeter).to.be.an("object");
-  });
+    expect(greeter).to.be.an("object")
+  })
 
   it("accepts a user argument", () => {
-    const greeter = new Greeter("John Doe");
+    const greeter = new Greeter("John Doe")
 
-    expect(greeter.user).to.be.eql("John Doe");
-  });
+    expect(greeter.user).to.be.eql("John Doe")
+  })
 
   context("#greet", () => {
     it("returns Hello plus the user", () => {
-      expect(greeter.greet()).to.be.eql("Hello Julio");
-    });
-  });
-});
+      expect(greeter.greet()).to.be.eql("Hello Julio")
+    })
+  })
+})

@@ -1,11 +1,11 @@
 class Greeter {
   constructor(user = "Julio") {
-    this.user = user;
+    this.user = user
   }
 
   greet() {
-    return `Hello ${this.user}`;
+    return `Hello ${this.user}`
   }
 }
 
-export default Greeter;
+export default Greeter
