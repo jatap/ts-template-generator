@@ -16,8 +16,12 @@ do
   cp -Rf ${TEMPLATE_PATH}/${unit} ${PROJECT_PATH}
 done
 
-sed -i '' -e "s|XXX|${PROJECT_NAME}|g" "${PROJECT_PATH}/package.json"
-sed -i '' -e "s|XXX|${PROJECT_NAME}|g" "${PROJECT_PATH}/README.md"
+rewrites=("package.json" "package-lock.json" "README.md")
+for rewrite in "${rewrites[@]}"
+do
+  echo -e "\e[0;37mRewriting ${unit}..."
+  sed -i '' -e "s|XXX|${PROJECT_NAME}|g" "${PROJECT_PATH}/${unit}"
+done
 
 echo -e "\e[1;32m\n>> Files has been successfully copied to ${PROJECT_PATH}\n"
 
