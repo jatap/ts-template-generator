@@ -1,6 +1,8 @@
 import { expect } from "chai"
-
 import Greeter from "../../../src/greeter"
+
+import debug from "debug"
+const logger = debug("test")
 
 describe("Greeter", () => {
   const greeter = new Greeter()
@@ -18,6 +20,13 @@ describe("Greeter", () => {
   context("#greet", () => {
     it("returns Hello plus the user", () => {
       expect(greeter.greet()).to.be.eql("Hello Julio")
+    })
+  })
+
+  context("debug", () => {
+    it("prints to the STDERR", () => {
+      logger(greeter)
+      logger(greeter.greet())
     })
   })
 })

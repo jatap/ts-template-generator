@@ -62,5 +62,8 @@
     ],
     "cache": true,
     "all": true
+  },
+  "dependencies": {
+    "debug": "^4.1.0"
   }
 }
