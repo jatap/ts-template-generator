@@ -12,7 +12,7 @@ lib/
 *.iml
 .project
 *.sublime-*
-.vscode
+!.vscode
 
 # Other
 .tmp
