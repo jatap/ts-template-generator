@@ -16,6 +16,7 @@
     "jasmine": true
   },
   "rules": {
+    "semi": 0,
     "no-unused-expressions": 0,
     "chai-friendly/no-unused-expressions": 2
   }
