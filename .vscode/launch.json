@@ -14,20 +14,20 @@
       "smartStep": true,
       "preLaunchTask": "build",
       "outFiles": [
-        "${workspaceFolder}/lib/*.js"
+        "${workspaceFolder}/.compiled/*.js"
       ]
     },
     {
       "type": "node",
       "request": "launch",
       "name": "Debug file compiled",
-      "program": "${workspaceFolder}/lib/${fileBasenameNoExtension}.js",
+      "program": "${workspaceFolder}/.compiled/${fileBasenameNoExtension}.js",
       "cwd": "${workspaceFolder}",
       "sourceMaps": true,
       "smartStep": true,
       "preLaunchTask": "build",
       "outFiles": [
-        "${workspaceFolder}/lib/*.js"
+        "${workspaceFolder}/.compiled/*.js"
       ]
     },
     {

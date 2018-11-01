@@ -5,7 +5,7 @@ node_modules/
 reports/
 
 # Build folder
-lib/
+.compiled/
 
 # IDE's
 .idea/

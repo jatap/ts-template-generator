@@ -4,8 +4,8 @@
   "description": "XXX",
   "main": "src/index.js",
   "scripts": {
-    "build": "babel src -d lib",
-    "watch": "babel src -d lib --watch",
+    "build": "babel src -d .compiled",
+    "watch": "babel src -d .compiled --watch",
     "start": "babel-node src/index.js",
     "lint-js": "eslint --ignore-path .gitignore --ignore-pattern \"!**/.*\" .",
     "fix-js": "npm run lint-js",
@@ -49,7 +49,7 @@
       ".js"
     ],
     "exclude": [
-      "lib"
+      ".compiled"
     ],
     "temp-dir": "./reports/.nyc_output",
     "report-dir": "./reports",

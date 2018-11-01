@@ -11,5 +11,5 @@ module.exports = {
   ],
   retainLines: true,
   sourceMaps: "inline",
-  ignore: ["node_modules", "lib"]
+  ignore: ["node_modules", ".compiled"]
 }
