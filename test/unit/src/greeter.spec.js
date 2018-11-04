@@ -1,8 +1,4 @@
-import { expect } from "chai"
 import Greeter from "../../../src/greeter"
-
-import debug from "debug"
-const logger = debug("test")
 
 describe("Greeter", () => {
   const greeter = new Greeter()
