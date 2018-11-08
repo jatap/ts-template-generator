@@ -1,4 +1,4 @@
 --require @babel/register
---file test/unit/support/helper.js
---file test/unit/support/hooks.js
+--file test/support/helper.js
+--file test/support/hooks.js
 --recursive test/**/*.spec.js
