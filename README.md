@@ -1,18 +1,3 @@
-# ES6 Template Generator
+# es6-template-generator
 
-Template to generate new ES6 tprojects
-
-## Dev dependencies
-
-- Babel
-- Mocha
-- Chai
-- Sinon
-- Nyc
-- Eslint
-- Prettier
-- Debug
-
-## TODO
-
-- Move to yeoman
+ES6 package

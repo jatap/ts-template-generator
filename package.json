@@ -1,7 +1,7 @@
 {
   "name": "es6-template-generator",
-  "version": "1.0.0",
-  "description": "XXX",
+  "version": "0.1.0",
+  "description": "es6-template-generator",
   "main": "src/index.js",
   "scripts": {
     "build": "babel src -d .compiled",
@@ -10,14 +10,19 @@
     "lint-js": "eslint --ignore-path .gitignore --ignore-pattern \"!**/.*\" .",
     "fix-js": "npm run lint-js",
     "lint": "npm run lint-js",
-    "test": "nyc mocha",
-    "test:debug": "nyc mocha --inspect-brk",
-    "test:watch": "nyc mocha --watch || true",
-    "test:coverage": "nyc check-coverage || true",
-    "test:coverage:open": "open reports/index.html",
-    "test:report": "nyc report"
+    "test": "jest",
+    "test:debug": "node --inspect-brk node_modules/.bin/jest --runInBand",
+    "test:watch": "jest --watch || true",
+    "test:coverage": "jest --coverage || true",
+    "test:coverage:open": "open reports/coverage/index.html",
+    "test:dev": "jest --watch --coverage || true"
   },
-  "keywords": [],
+  "keywords": [
+    "javascript",
+    "js",
+    "node",
+    "es6"
+  ],
   "author": "Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>",
   "license": "ISC",
   "devDependencies": {
@@ -26,47 +31,22 @@
     "@babel/node": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/register": "^7.0.0",
-    "@types/chai": "^4.1.7",
-    "@types/mocha": "^5.2.5",
-    "@types/sinon": "^5.0.5",
-    "chai": "^4.1.2",
+    "@types/jest": "^23.3.9",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
     "debug": "^4.1.0",
     "eslint": "^5.7.0",
     "eslint-config-prettier": "^3.1.0",
     "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-chai-friendly": "^0.4.1",
     "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jest": "^22.0.0",
     "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
-    "mocha": "^5.2.0",
-    "nyc": "^13.1.0",
-    "prettier": "^1.13.4",
-    "sinon": "^7.1.0"
-  },
-  "nyc": {
-    "include": [
-      "src/**/*.js"
-    ],
-    "extension": [
-      ".js"
-    ],
-    "exclude": [
-      ".compiled"
-    ],
-    "temp-dir": "./reports/.nyc_output",
-    "report-dir": "./reports",
-    "reporter": [
-      "text-summary",
-      "lcovonly",
-      "html"
-    ],
-    "require": [
-      "@babel/register"
-    ],
-    "cache": true,
-    "all": true
+    "jest": "^23.6.0",
+    "jest-extended": "^0.11.0",
+    "prettier": "^1.13.4"
   },
   "engines": {
     "node": "10.13.0",
