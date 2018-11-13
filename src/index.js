@@ -1,3 +1,1 @@
-import Greeter from "./greeter";
-
-export default new Greeter();
+console.log("Hello World!");
