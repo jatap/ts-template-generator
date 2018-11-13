@@ -1,3 +1,3 @@
-import Greeter from "./greeter"
+import Greeter from "./greeter";
 
-export default new Greeter()
+export default new Greeter();
