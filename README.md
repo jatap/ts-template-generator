@@ -24,6 +24,8 @@ Template to generate new ES6 projects
 - Eslint
 - Prettier
 - Debug
+- Commitizen
+- Standard Version
 
 ## Usage
 
