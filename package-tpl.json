@@ -2,7 +2,15 @@
   "name": "XXX",
   "version": "1.0.0",
   "description": "XXX",
+  "author": "Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>",
+  "license": "ISC",
   "main": "src/index.js",
+  "keywords": [
+    "javascript",
+    "js",
+    "node",
+    "es6"
+  ],
   "scripts": {
     "***": "<------------------ build -------------------------------------->",
     "build": "babel src -d .compiled",
@@ -27,14 +35,6 @@
     "flow:check": "flow check",
     "flow:deps": "flow-typed install"
   },
-  "keywords": [
-    "javascript",
-    "js",
-    "node",
-    "es6"
-  ],
-  "author": "Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>",
-  "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
