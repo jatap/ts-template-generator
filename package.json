@@ -1,7 +1,7 @@
 {
   "name": "es6-template-generator",
   "version": "0.1.0",
-  "description": "es6-template-generator",
+  "description": "ES6 Template Generator",
   "main": "src/index.js",
   "scripts": {
     "build": "babel src -d .compiled",
