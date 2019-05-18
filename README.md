@@ -18,7 +18,7 @@ Template to generate new TypeScript projects
 
 ## Packages
 
-- Babel
+- TypeScript
 - Jest
 - Eslint
 - Prettier
