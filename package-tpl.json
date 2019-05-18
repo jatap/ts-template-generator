@@ -5,13 +5,7 @@
   "author": "Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>",
   "license": "ISC",
   "main": "src/index.js",
-  "keywords": [
-    "javascript",
-    "js",
-    "node",
-    "ts",
-    "typescript"
-  ],
+  "keywords": ["javascript", "js", "node", "ts", "typescript"],
   "scripts": {
     "***": "<------------------ build -------------------------------------->",
     "build": "babel src -d .compiled",
@@ -60,6 +54,10 @@
     "jest-extended": "^0.11.0",
     "prettier": "^1.15.3",
     "standard-version": "^4.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XXX/XXX.git"
   },
   "engines": {
     "node": "10.15.3",
