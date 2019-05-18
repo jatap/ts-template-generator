@@ -1,7 +1,7 @@
 {
-  "name": "es6-template-generator",
+  "name": "ts-template-generator",
   "version": "0.1.0",
-  "description": "ES6 Template Generator",
+  "description": "TypeScript Template Generator",
   "author": "Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>",
   "license": "ISC",
   "main": "src/index.js",
@@ -9,7 +9,8 @@
     "javascript",
     "js",
     "node",
-    "es6"
+    "ts",
+    "typescript"
   ],
   "scripts": {
     "***": "<------------------ build -------------------------------------->",
