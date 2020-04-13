@@ -5,7 +5,13 @@
   "author": "Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>",
   "license": "ISC",
   "main": "src/index.ts",
-  "keywords": ["javascript", "js", "node", "ts", "typescript"],
+  "keywords": [
+    "javascript",
+    "js",
+    "node",
+    "ts",
+    "typescript"
+  ],
   "scripts": {
     "***": "<------------------ build -------------------------------------->",
     "build": "tsc",
