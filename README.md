@@ -25,6 +25,7 @@ Template to generate new TypeScript projects
 - Debug
 - Commitizen
 - Standard Version
+- Config
 
 ## Usage
 
