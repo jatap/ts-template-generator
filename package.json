@@ -19,9 +19,9 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "commitizen": "^4.0.3",
-    "cz-customizable": "^6.2.0",
-    "standard-version": "^7.1.0"
+    "commitizen": "^4.2.3",
+    "cz-customizable": "^6.3.0",
+    "standard-version": "^9.1.0"
   },
   "repository": {
     "type": "git",
@@ -36,7 +36,7 @@
     }
   },
   "engines": {
-    "node": "10.15.3",
-    "npm": "6.4.1"
+    "node": "14.x.x",
+    "npm": "7.x.x"
   }
 }
