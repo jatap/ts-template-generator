@@ -1,1 +1,3 @@
-export const data = "Hello World!";
+const data = 'Hello World!';
+
+export default data;

@@ -19,9 +19,9 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "commitizen": "^4.2.3",
+    "commitizen": "^4.2.4",
     "cz-customizable": "^6.3.0",
-    "standard-version": "^9.1.0"
+    "standard-version": "^9.3.0"
   },
   "repository": {
     "type": "git",
