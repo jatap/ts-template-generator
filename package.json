@@ -1,6 +1,6 @@
 {
   "name": "ts-template-generator",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "TypeScript Template Generator",
   "author": "Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>",
   "license": "ISC",
@@ -8,35 +8,46 @@
   "keywords": [
     "javascript",
     "js",
+    "jsx",
     "node",
     "ts",
+    "tsx",
     "typescript"
   ],
   "scripts": {
     "***": "<------------------ build -------------------------------------->",
-    "commit": "git cz",
-    "release": "standard-version --no-verify -t ''"
+    "build": "tsc -p tsconfig.build.json",
+    "watch": "tsc --watch",
+    "****": "<----------------- lint --------------------------------------->",
+    "lint": "yarn lint:ts",
+    "lint:ts": "tsc --noEmit && eslint_d --ignore-path .gitignore --ignore-pattern \"!**/.*\" --ext .js,.jsx,.ts,.tsx .",
+    "lint:fix": "yarn lint:js -- --quiet --fix",
+    "******": "<--------------- types --------------------------------------->",
+    "types": "dts-gen"
   },
   "dependencies": {},
   "devDependencies": {
-    "commitizen": "^4.2.4",
-    "cz-customizable": "^6.3.0",
-    "standard-version": "^9.3.0"
+    "@types/node": "^16.11.7",
+    "@typescript-eslint/eslint-plugin": "^5.59.1",
+    "@typescript-eslint/parser": "^5.59.1",
+    "debug": "^4.3.4",
+    "dts-gen": "^0.6.1",
+    "eslint": "^8.39.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "prettier": "^2.8.8",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jatap/ts-template-generator.git"
   },
-  "config": {
-    "commitizen": {
-      "path": "node_modules/cz-customizable"
-    },
-    "cz-customizable": {
-      "config": "cz-customizable.js"
-    }
-  },
   "engines": {
     "node": "16.x.x",
-    "npm": "7.x.x"
+    "npm": "8.x.x"
   }
 }

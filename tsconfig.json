@@ -13,8 +13,8 @@
     "sourceMap": true,
     "strict": true,
     "target": "es2016",
-    "types": ["@types/node", "@types/jest"]
+    "types": ["@types/node"]
   },
-  "include": ["src"],
+  "include": ["generator"],
   "exclude": ["node_modules"]
 }

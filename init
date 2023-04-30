@@ -12,19 +12,17 @@ units=(".editorconfig" \
   ".lintstagedrc" \
   ".yarnrc" \
   ".prettierrc" \
-  ".vscode" \
   "src" \
-  "config" \
-  "cz-customizable.js" \
   "jest.config.js" \
   "package.json" \
+  "tsconfig.build.json" \
   "tsconfig.json" \
   "README.md")
 
 touch README.md
 git init
 git add README.md
-git commit -am 'chore(init): first sending'
+git commit -am 'chore: first sending'
 
 echo -e "\e[1;32m\n>> Git repo has been initialized\e[1;37m\n"
 
@@ -61,7 +59,7 @@ yarn install
 echo -e "\e[1;32m\n>> Packages have been updated\e[0;37m\n"
 
 git add .
-git commit -am 'chore(init): first updated'
+git commit -am 'chore: first updated'
 
 echo -e "\e[1;32m\n>> Git repo has been updated\e[1;37m\n"
 

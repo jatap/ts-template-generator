@@ -2,11 +2,7 @@
   "root": true,
   "env": {
     "es6": true,
-    "node": true,
-    "mocha": true,
-    "jasmine": true,
-    "jest/globals": true,
-    "browser": true
+    "node": true
   },
   "extends": [
     "eslint-config-airbnb-base",
@@ -16,11 +12,10 @@
     "plugin:import/warnings",
     "plugin:promise/recommended",
     "plugin:node/recommended",
-    "plugin:jest/recommended",
     "prettier"
   ],
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint", "promise", "jest"],
+  "plugins": ["@typescript-eslint", "promise"],
   "rules": {
     "import/no-unresolved": 0,
     "node/no-unsupported-features/es-syntax": 0,

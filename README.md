@@ -13,8 +13,8 @@ Template to generate new TypeScript projects
 
 ## Requisites
 
-- Node 14.x.x
-- NVM 7.x.x
+- Node 16.x.x
+- NVM 8.x.x
 
 ## Packages
 
@@ -23,9 +23,6 @@ Template to generate new TypeScript projects
 - Eslint
 - Prettier
 - Debug
-- Commitizen
-- Standard Version
-- Config
 
 ## Usage
 
@@ -56,17 +53,6 @@ Execute TypeScript Template Generator
 ```bash
 $ new_ts_project
 ```
-
-## IDE Support
-
-Support for debug in VSCode
-
-- Debug file (source)
-- Debug file (compiled)
-- Debug test
-- Debug tests
-- Debug tests (attach)
-- Debug tests (launch & attach)
 
 ## References
 
