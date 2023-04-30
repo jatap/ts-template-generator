@@ -20,9 +20,9 @@
     "pretty": true,
     "sourceMap": true,
     "strict": true,
-    "target": "esnext",
+    "target": "es6",
     "types": ["@types/node", "@types/jest"]
   },
   "include": ["src"],
-  "exclude": ["node_modules", "./compiled", "**/*.test.ts"]
+  "exclude": ["node_modules"]
 }
