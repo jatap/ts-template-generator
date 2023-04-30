@@ -53,7 +53,3 @@ Execute TypeScript Template Generator
 ```bash
 $ new_ts_project
 ```
-
-## References
-
-- [TypeScript Cli Template Generator](https://github.com/jatap/ts-cli-template-generator)
